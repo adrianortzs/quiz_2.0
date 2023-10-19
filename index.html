@@ -5,11 +5,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>QuizzyWize</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <main id="main_quiz">
+        <header id="header_quiz">
+            <h1>¡Bienvenidos a "QuizzyWiz:</h1>
+            <h1>10 Preguntas Desafiantes"!</h1>
+        </header>
 
+        <section class="front_quiz">
+            <p>En este emocionante juego, pondremos a prueba tus conocimientos y habilidades. ¿Cómo funciona? ¡Es
+                sencillo!Tendrás 10 preguntas, cada una con 4 respuestas posibles. Tu objetivo es seleccionar la
+                respuesta correcta. Mantén la calma, relaja tu cerebro y prepárate. ¡Puedes sorprenderte de lo que
+                aprenderás en el camino! ¿Listo para poner a prueba tus
+                habilidades y curiosidad? ¡Comencemos!</p>
+        </section>
+
+        <section>
+            <h3>Registro</h3>
+            <form id="form1" action="#" method="POST">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Introduce un email..."><br>
+                <label for="pass">Contraseña:</label><br>
+                <input type="password" id="pass" name="pass" placeholder="Introduce una contraseña..."><br>
+                <label for="pass2">Repite contraseña:</label><br>
+                <input type="password" id="pass2" name="pass2" placeholder="Repite la contraseña..."><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <section>
+            <h3>Login</h3>
+            <form id="form2" action="#" method="POST">
+                <label for="email2">Email:</label><br>
+                <input type="email" id="email2" name="email2" placeholder="Introduce tu email..."><br>
+                <label for="pass3">Contraseña:</label><br>
+                <input type="password" id="pass3" name="pass3" placeholder="Introduce tu contraseña..."><br>
+                <input type="submit" value="EMPEZAR" href="./question.html">
+            </form>
+        </section>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+
+    </main>
+    <script src="./script.js"></script>
 </body>
 
 </html>
